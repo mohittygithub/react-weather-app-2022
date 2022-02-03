@@ -14,7 +14,7 @@ const App = () => {
   const getWeatherData = async (cityName) => {
     if (cityName) {
       const response = await axios.get(
-        `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${process.env.REACT_APP_WEATHER_API_KEY}&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=dd4d0b177cd47a819da3e014e0ca8d4d&units=metric`
       );
       setData(response.data);
       localStorage.setItem("cityName", response.data.name);
